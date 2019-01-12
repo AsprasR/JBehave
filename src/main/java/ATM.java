@@ -6,7 +6,11 @@ public class ATM {
         this.money = money;
     }
 
-    public int requestMoney(CreditCard creditCard, int amount) {
+    int getMoney() {
+        return money;
+    }
+
+    int requestMoney(CreditCard creditCard, int amount) {
         if (!creditCard.isValid() || amount > money) {
             return 0;
         }
@@ -16,6 +20,14 @@ public class ATM {
         money = money - amount;
 
         return amount;
+    }
+
+    boolean fillMoney(int amount){
+        if( amount < 0) return false;
+        else{
+            this.money += amount;
+            return true;
+        }
     }
 
 }
