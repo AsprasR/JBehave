@@ -1,6 +1,5 @@
-Meta:
 
-Narrative:
+Narrative: ATM Filler want to fill ATM
 As a ATM Filler
 I want fill a ATM
 In order to fill money when ATM is empty

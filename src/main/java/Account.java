@@ -6,11 +6,11 @@ public class Account {
         this.balance = balance;
     }
 
-    public int getBalance() {
+    int getBalance() {
         return balance;
     }
 
-    public int getMoney(int amount) {
+    int getMoney(int amount) {
         if (balance < amount)
             return 0;
 
@@ -18,5 +18,10 @@ public class Account {
 
         return amount;
 
+    }
+
+    boolean setMoney(int money){
+        balance = balance+money;
+        return true;
     }
 }

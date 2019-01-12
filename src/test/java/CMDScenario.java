@@ -7,7 +7,7 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 
-public class ATMScenario extends JUnitStory {
+public class CMDScenario extends JUnitStory {
 
 
     @Override
@@ -19,6 +19,6 @@ public class ATMScenario extends JUnitStory {
 
     @Override
     public InjectableStepsFactory stepsFactory() {
-        return new InstanceStepsFactory(configuration(), new ATMScenarioSteps());
+        return new InstanceStepsFactory(configuration(), new CMDScenarioSteps());
     }
 }
